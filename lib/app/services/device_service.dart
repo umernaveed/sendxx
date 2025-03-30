@@ -17,7 +17,7 @@ class DeviceInfoProvider {
   late String timeZone;
 
   static const String _iosLink =
-      'https://apps.apple.com/pk/app/sendxja/id6475771107';
+      'https://apps.apple.com/pk/app/sendx-ja/id6743345579';
   static const String _androidLink =
       'https://play.google.com/store/apps/details?id=com.sendx.app';
 
