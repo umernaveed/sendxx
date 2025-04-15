@@ -157,8 +157,7 @@ class ManagePickupRequest extends GetView<ManagePickUpRequestController> {
                       //   ),
                       // ),
 
-                      Visibility(
-                        visible: controller.deliveryType.typeID == 2,
+                     
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -178,7 +177,7 @@ class ManagePickupRequest extends GetView<ManagePickUpRequestController> {
                             ),
                           ],
                         ),
-                      ),
+                      
                       // CustomDropDown<Day>(
                       //   name: 'time_slot',
                       //   spaceBTW: 10,
