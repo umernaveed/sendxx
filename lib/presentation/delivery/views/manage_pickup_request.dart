@@ -158,25 +158,21 @@ class ManagePickupRequest extends GetView<ManagePickUpRequestController> {
                       // ),
 
                      
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            SizedBox(height: 2.5.h),
-                            FormBuilderTimeSlotSelector(
-                              name: 'time_slot',
-                              title: 'Select a Time Slot',
-                              timeSlots: controller.timeSlots,
-                              onChanged: (e) {},
-                              disabledTimeSlots: controller.disableSlots
-                                  .map((e) => e.id.toString())
-                                  .toList()
-                                  .toSet(),
-                              validator: FormBuilderValidators.required(
-                                errorText: 'Please select a time slot.',
-                              ),
+                        SizedBox(height: 2.5.h),
+                          FormBuilderTimeSlotSelector(
+                            name: 'time_slot',
+                            title: 'Select a Time Slot',
+                            timeSlots: controller.timeSlots,
+                            onChanged: (e) {},
+                            disabledTimeSlots: controller.disableSlots
+                                .map((e) => e.id.toString())
+                                .toList()
+                                .toSet(),
+                            validator: FormBuilderValidators.required(
+                              errorText: 'Please select a time slot.',
                             ),
-                          ],
-                        ),
+                          ),
+
                       
                       // CustomDropDown<Day>(
                       //   name: 'time_slot',
